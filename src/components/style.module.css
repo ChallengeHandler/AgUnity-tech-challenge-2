@@ -1,0 +1,27 @@
+.data-cell {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 1em;
+  border-width: 0;
+  display: flex;
+  align-items: center; }
+
+  .data-cell .data-label, .data-cell .data-value {
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+
+  .data-cell .data-value {
+    border-radius: 0.5em; }
+
+  .data-cell.green {
+    color: var(--green-color);
+    background-color: var(--green-background-color); }
+
+    .data-cell.green .data-value {
+      background-color: var(--green-color);
+      color: var(--green-background-color); }

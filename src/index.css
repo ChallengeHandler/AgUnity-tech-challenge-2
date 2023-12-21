@@ -5,6 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --green-color: #2cb2ab;
+  --green-background-color: #d6f5f3;
+  --violet-color: #583892;
+  --violet-background-color: #e9e0fb;
+  --blue-color: #2f81ca;
+  --blue-background-color: #cce6fb;
 }
 
 code {
