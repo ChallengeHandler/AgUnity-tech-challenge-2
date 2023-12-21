@@ -11,6 +11,16 @@ function App() {
         value='123123'
         style='green'
       />
+      <DataCell
+        label='efefe'
+        value='123123'
+        style='violet'
+      />
+      <DataCell
+        label='efefe'
+        value='123123'
+        style='blue'
+      />
     
     </div>
   );

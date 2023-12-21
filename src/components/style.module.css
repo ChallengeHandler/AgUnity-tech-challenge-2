@@ -1,12 +1,15 @@
 .data-cell {
+  display: inline-block;
   padding-top: 0.75em;
   padding-bottom: 0.75em;
   padding-left: 1em;
   padding-right: 1em;
-  border-radius: 1em;
-  border-width: 0;
-  display: flex;
-  align-items: center; }
+  border-radius: 0.75em;
+  border-width: 0; }
+
+  .data-cell .data-container {
+    display: flex;
+    align-items: center; }
 
   .data-cell .data-label, .data-cell .data-value {
     padding-left: 0.75em;
@@ -18,6 +21,9 @@
   .data-cell .data-value {
     border-radius: 0.5em; }
 
+  .data-cell .data-label {
+    padding-right: 0; }
+
   .data-cell.green {
     color: var(--green-color);
     background-color: var(--green-background-color); }
@@ -25,3 +31,19 @@
     .data-cell.green .data-value {
       background-color: var(--green-color);
       color: var(--green-background-color); }
+
+  .data-cell.violet {
+    color: var(--violet-color);
+    background-color: var(--violet-background-color); }
+
+    .data-cell.violet .data-value {
+      background-color: var(--violet-color);
+      color: var(--violet-background-color); }
+  
+  .data-cell.blue {
+    color: var(--blue-color);
+    background-color: var(--blue-background-color); }
+
+    .data-cell.blue .data-value {
+      background-color: var(--blue-color);
+      color: var(--blue-background-color); }
