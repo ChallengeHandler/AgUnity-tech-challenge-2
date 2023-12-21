@@ -1,7 +1,8 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { DataCell } from './components/DataCell';
+import populationData from './data/population.json'
+import { DataCard } from './components/DataCard';
+import { DataGroup } from './components/DataGroup';
 
 function App() {
   return (
@@ -21,7 +22,13 @@ function App() {
         value='123123'
         style='blue'
       />
-    
+      <DataCard
+        data={populationData.men.countries}
+      />
+      <DataGroup
+        data={populationData.men}
+        category="men"
+      />
     </div>
   );
 }
