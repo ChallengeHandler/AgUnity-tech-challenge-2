@@ -4,7 +4,13 @@ import styles from './style.module.css'
 
 type DataGroupProps = {
   data: CategoryPopulation,
-  category: 'men'|'women'|'youth'
+  category: CategoryType
+}
+
+const categoryColors: { [key in string]: StyleType } = {
+  men: 'green',
+  women: 'violet',
+  youth: 'blue'
 }
 
 export const DataGroup: FC<DataGroupProps> = ({ data, category }) => {
@@ -20,6 +26,7 @@ export const DataGroup: FC<DataGroupProps> = ({ data, category }) => {
       </div>
       <DataCard
         data={data.countries}
+        style={categoryColors[category]}
       />
     </div>
   )

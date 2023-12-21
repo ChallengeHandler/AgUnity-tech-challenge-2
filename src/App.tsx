@@ -7,28 +7,13 @@ import { DataGroup } from './components/DataGroup';
 function App() {
   return (
     <div className="App">
-      <DataCell
-        label='efefe'
-        value='123123'
-        style='green'
-      />
-      <DataCell
-        label='efefe'
-        value='123123'
-        style='violet'
-      />
-      <DataCell
-        label='efefe'
-        value='123123'
-        style='blue'
-      />
-      <DataCard
-        data={populationData.men.countries}
-      />
-      <DataGroup
-        data={populationData.men}
-        category="men"
-      />
+      {Object.keys(populationData).map((key) => (
+        <DataGroup
+          key={key}
+          data={populationData[key as CategoryType]}
+          category={key as CategoryType}
+        />
+      ))}
     </div>
   );
 }

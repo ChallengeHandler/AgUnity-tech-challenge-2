@@ -7,3 +7,7 @@ type CategoryPopulation = {
   total: string,
   countries: CountryPopulation[]
 }
+
+type StyleType = 'green'|'violet'|'blue';
+
+type CategoryType = 'men'|'women'|'youth';

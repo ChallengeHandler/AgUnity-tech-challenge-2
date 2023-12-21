@@ -4,7 +4,7 @@ import styles from './style.module.css'
 type DataCellProps = {
   label: string,
   value: string,
-  style: 'green'|'violet'|'blue'
+  style: StyleType
 }
 
 export const DataCell: FC<DataCellProps> = ({ label, value, style = 'green' }) => {

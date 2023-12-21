@@ -3,10 +3,11 @@ import { DataCell } from './DataCell'
 import styles from './style.module.css'
 
 type DataCardProps = {
-  data: CountryPopulation[]
+  data: CountryPopulation[],
+  style: StyleType
 }
 
-export const DataCard: FC<DataCardProps> = ({ data }) => {
+export const DataCard: FC<DataCardProps> = ({ data, style }) => {
   return (
     <div className={`${styles["data-card"]}`}>
       <div className={styles["subtitle"]}>
@@ -18,7 +19,7 @@ export const DataCard: FC<DataCardProps> = ({ data }) => {
             key={key}
             label={datum.country}
             value={datum.population}
-            style='green'
+            style={style}
           />
         ))}
       </div>
